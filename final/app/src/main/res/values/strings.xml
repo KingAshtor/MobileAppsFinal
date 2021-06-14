@@ -2,4 +2,13 @@
     <string name="app_name">MobileAppsFinal</string>
     <string name="txtSplash">Welcome to The Cafe</string>
     <string name="txtMainImg">Background of grey wood</string>
+    <string name="txtMyOrderTitle">My Order</string>
+    <string name="txtMyOrderAddDrink">Add a Drink</string>
+    <string name="txtMyOrderTotal">Total:No Items!</string>
+    <string name="btnGoBack">Go Back</string>
+    <string name="btnClearOrder">Clear Order</string>
+    <string name="radioSmall">Small $0.75</string>
+    <string name="radioMedium">Medium $1.75</string>
+    <string name="radioLarge">Large $2.25</string>
 </resources>
+
