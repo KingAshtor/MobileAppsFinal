@@ -4,6 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen">
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="420dp"
+        android:layout_height="733dp"
+        android:background="@drawable/restaurant"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingTop="520dp"
+        android:paddingRight="180dp"
+        android:text="@string/txtSplash"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

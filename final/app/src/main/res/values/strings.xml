@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MobileAppsFinal</string>
+    <string name="txtSplash">Welcome to The Cafe</string>
+    <string name="txtMainImg">Background of grey wood</string>
 </resources>

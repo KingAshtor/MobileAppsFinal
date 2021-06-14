@@ -14,8 +14,8 @@
         <activity android:name=".Dinner" />
         <activity android:name=".Lunch" />
         <activity android:name=".Breakfast" />
-        <activity android:name=".SplashScreen" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
