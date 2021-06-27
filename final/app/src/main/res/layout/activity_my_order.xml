@@ -140,7 +140,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/food1"
+                android:id="@+id/foodTitle"
                 android:layout_width="142dp"
                 android:gravity="left"
                 android:padding="6dp"
@@ -150,7 +150,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/price1"
+                android:id="@+id/priceTitle"
                 android:gravity="right"
                 android:padding="6dp"
                 android:text="$Price"
@@ -165,13 +165,13 @@
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/food2"
+                android:id="@+id/food1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/price2"
+                android:id="@+id/price1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$" />

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -30,6 +31,24 @@ public class MyOrder extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_order);
 
+        //For displaying values to the tableLayout
+        TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
+        tableLayout.findViewsWithText(ArrayList<View>); //need to reference other activities
+        // Create a new row to be added.
+        //TableRow row1 = new TableRow(this);
+        //row1.setLayoutParams(new TableRow.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
+
+        //this is after the line initializing the stringArray, might have to be in the other activities instead
+        setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, attraction));
+
+        protected void onListItemCheck(TableLayout tableLayout, View v, int position, long id){
+
+        }
+
+
+
+
+
         btnGoBack = (Button) findViewById(R.id.btnGoBack);
         btnGoBack.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -49,11 +68,6 @@ public class MyOrder extends AppCompatActivity {
         });
 
 
-        //For displaying values to the tableLayout
-        TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
-        // Create a new row to be added.
-        TableRow row1 = new TableRow(this);
-        row1.setLayoutParams(new TableRow.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
 
 
 
