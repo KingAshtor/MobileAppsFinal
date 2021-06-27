@@ -42,8 +42,9 @@ public class MyOrder extends AppCompatActivity {
         setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, attraction));
 
         protected void onListItemCheck(TableLayout tableLayout, View v, int position, long id){
-
+            //pull from the listArray in other projects to display here using for loop
         }
+
 
 
 
