@@ -12,6 +12,8 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class MyOrder extends AppCompatActivity {
 
     private Button btnGoBack;
@@ -20,6 +22,8 @@ public class MyOrder extends AppCompatActivity {
     private RadioButton radioMedium;
     private RadioButton radioLarge;
     private RadioGroup radioGroup;
+    private String currencyFormat;
+    private double total;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +31,6 @@ public class MyOrder extends AppCompatActivity {
         setContentView(R.layout.activity_my_order);
 
         btnGoBack = (Button) findViewById(R.id.btnGoBack);
-
         btnGoBack.setOnClickListener(new View.OnClickListener(){
             @Override
                     public void onClick(View v){
@@ -36,25 +39,40 @@ public class MyOrder extends AppCompatActivity {
             }
         });
 
-        radioSmall = (RadioButton) findViewById(R.id.radioSmall);
-        radioMedium = (RadioButton) findViewById(R.id.radioMedium);
-        radioLarge = (RadioButton) findViewById(R.id.radioLarge);
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
-
-
-        radioGroup = findViewById(R.id.radioGroup);
         radioGroup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int selectedID = radioGroup.getCheckedRadioButtonId();
-                Toast.makeText(activity_my_order.this, radioButton.getText(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(activity_my_order.this, radioButton.getText(), Toast.LENGTH_SHORT).show();
             }
         });
 
+
+        //For displaying values to the tableLayout
+        TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
+        // Create a new row to be added.
+        TableRow row1 = new TableRow(this);
+        row1.setLayoutParams(new TableRow.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
+
+
+
+
+
+
+
+
+
+        //for order total
         TextView txtMyOrderTotal = null;
 
-        txtMyOrderTotal.getAutofillValue()
+        txtMyOrderTotal.getAutofillValue(){
 
+            public static String currencyFormat (String total){
+                DecimalFormat formatter = new DecimalFormat("###,###,##0.00");
+                return formatter.format(Double.parseDouble(String.valueOf(total)));
+            }
+        }
 
 
 //        radioGroup.setOnClickListener(new View.OnClickListener() {
