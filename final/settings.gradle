@@ -1,2 +1,2 @@
-rootProject.name = "MobileAppsFinal"
+rootProject.name = "myPart"
 include ':app'
