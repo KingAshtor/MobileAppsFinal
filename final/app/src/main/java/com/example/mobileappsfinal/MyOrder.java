@@ -34,9 +34,21 @@ public class MyOrder extends AppCompatActivity {
         //For displaying values to the tableLayout
         TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
         tableLayout.findViewsWithText(ArrayList<View>); //need to reference other activities
-        // Create a new row to be added.
-        //TableRow row1 = new TableRow(this);
-        //row1.setLayoutParams(new TableRow.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
+
+
+        for(int i=0;i<totalNames.size();i++)
+        {
+            TableRow row=new TableRow(this);
+            double name = totalNames.get(i);
+            double price = totalPrice.get(i);
+            TextView food1=new TextView(this);
+            food1.setText(""+ );
+            TextView price1=new TextView(this);
+            price1.setText("$"+ );
+            row.addView(food1);
+            row.addView(price1);
+            tableLayout.addView(row);
+        }
 
         //this is after the line initializing the stringArray, might have to be in the other activities instead
         setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, attraction));
@@ -67,59 +79,31 @@ public class MyOrder extends AppCompatActivity {
                 //Toast.makeText(activity_my_order.this, radioButton.getText(), Toast.LENGTH_SHORT).show();
             }
         });
-
-
-
-
-
-
-
-
-
-
-
-        //for order total
-        TextView txtMyOrderTotal = null;
-
-        txtMyOrderTotal.getAutofillValue(){
-
-            public static String currencyFormat (String total){
-                DecimalFormat formatter = new DecimalFormat("###,###,##0.00");
-                return formatter.format(Double.parseDouble(String.valueOf(total)));
-            }
-        }
-
-
-//        radioGroup.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//        //for order total
+//        TextView txtMyOrderTotal = null;
+//
+//        txtMyOrderTotal.getAutofillValue(){
+//
+//            public static String currencyFormat (String total){
+//                DecimalFormat formatter = new DecimalFormat("###,###,##0.00");
+//                return formatter.format(Double.parseDouble(String.valueOf(total)));
 //            }
-//        });
+//        }
 
-//        radioSmall.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//                TableLayout tableLayout=(TableLayout)findViewById(R.id.tableLayout);
-//                TableRow tr2 = new TableRow(this);
-//            }
-//        });
-//
-//        radioMedium.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
-//
-//        radioLarge.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
 
+//
 
         }
-    }
-
+  }
+//
