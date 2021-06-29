@@ -1,7 +1,9 @@
 package com.example.mobileappsfinal;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.Placeholder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -11,9 +13,8 @@ import android.widget.RadioGroup;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 public class MyOrder extends AppCompatActivity {
 
@@ -40,20 +41,25 @@ public class MyOrder extends AppCompatActivity {
         //setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, attraction));
 
         protected void onListItemCheck(TableLayout tableLayout, View v, int position, long id){
+            ArrayList<Double> totalNames = datasource.totalNames;
+            ArrayList<Double> totalPrice = datasource.totalPrice;
+
+            TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
+
             //pull from the listArray in other projects to display here using for loop
             for(int i=0;i<totalNames.size();i++)
             {
-                TableRow row=new TableRow(this);
+                TableRow row1 =new TableRow(this);
                 double name = totalNames.get(i);
                 double price = totalPrice.get(i);
                 TextView food1=new TextView(this);
                 food1.setText(findViewById(totalNames));
                 TextView price1=new TextView(this);
                 price1.setText(findViewById("$" + totalPrice);
-                row.addView(food1);
-                row.addView(price1);
-                tableLayout.addView(row);
-                setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, attraction));
+                row1.addView(food1);
+                row1.addView(price1);
+                tableLayout.addView(row1);
+                setListAdapter(new ArrayAdapter<String>(this,android.R.layout.tableLayout, attraction));
             }
         }
 
@@ -62,14 +68,14 @@ public class MyOrder extends AppCompatActivity {
 
 
 
-        btnGoBack = (Button) findViewById(R.id.btnGoBack);
-        btnGoBack.setOnClickListener(new View.OnClickListener(){
-            @Override
-                    public void onClick(View v){
-                finish();
-                //this is for the Go Back button, see word doc
-            }
-        });
+//        btnGoBack = (Button) findViewById(R.id.btnGoBack);
+//        btnGoBack.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//                    public void onClick(View v){
+//                finish();
+//                //this is for the Go Back button, see word doc
+//            }
+//        });
 
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         radioGroup.setOnClickListener(new View.OnClickListener() {
@@ -102,8 +108,19 @@ public class MyOrder extends AppCompatActivity {
 //        }
 
 
-//
+        btnGoBack = (Button)findViewById(R.id.btnGoBack);
+        btnGoBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnGoBack();
+            }
+        });
 
         }
+    public void btnGoBack() {
+        Intent intent = new Intent(this, Placeholder.class);
+        startActivity(intent);
+    }
+
   }
-//
+
