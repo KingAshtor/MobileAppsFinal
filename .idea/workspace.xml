@@ -1,58 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <pickBest>false</pickBest>
+      </config>
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="65f558c1-cbdd-4cac-8619-761c91a6fd69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MobileAppsFinal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MobileAppsFinal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/final/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/final/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/androidTest/java/com/example/mobileappsfinal/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/androidTest/java/com/example/mobileappsfinal/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/Breakfast.java" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/Breakfast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/Desserts.java" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/Desserts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/Dinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/Dinner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/Lunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/Lunch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/MyOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/MyOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/java/com/example/mobileappsfinal/SplashScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/drawable/foodicon_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/drawable/foodicon_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/layout/activity_desserts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/layout/activity_desserts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/layout/activity_dinner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/layout/activity_dinner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/layout/activity_lunch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/layout/activity_lunch.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/layout/activity_my_order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/layout/activity_my_order.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/layout/activity_splash_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/layout/activity_splash_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/mipmap-anydpi-v26/foodicon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/mipmap-anydpi-v26/foodicon.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/mipmap-anydpi-v26/foodicon_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/mipmap-anydpi-v26/foodicon_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/app/src/test/java/com/example/mobileappsfinal/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/final/app/src/test/java/com/example/mobileappsfinal/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/final/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/final/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/final/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/final/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/final/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/final/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +49,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/final" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,11 +71,43 @@
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="593" y="219" key="FileChooserDialogImpl" timestamp="1624390899206">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="3621" y="-420" key="FileChooserDialogImpl/0.0.1280.680/2880.-696.1920.1040@2880.-696.1920.1040" timestamp="1623524566505" />
-    <state x="593" y="219" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1624390899206" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

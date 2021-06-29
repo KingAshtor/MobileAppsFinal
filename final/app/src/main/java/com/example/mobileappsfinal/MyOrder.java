@@ -49,17 +49,24 @@ public class MyOrder extends AppCompatActivity {
             //pull from the listArray in other projects to display here using for loop
             for(int i=0;i<totalNames.size();i++)
             {
+                ArrayList<String> totalNames = new ArrayList<String>();
+                ArrayList<Double> totalPrice = new ArrayList<Double>();
+
+                setListAdapter(new ArrayAdapter<String>(this,android.R.layout.tableLayout, attraction));
+
                 TableRow row1 =new TableRow(this);
                 double name = totalNames.get(i);
+
                 double price = totalPrice.get(i);
                 TextView food1=new TextView(this);
                 food1.setText(findViewById(totalNames));
                 TextView price1=new TextView(this);
                 price1.setText(findViewById("$" + totalPrice);
+
                 row1.addView(food1);
                 row1.addView(price1);
                 tableLayout.addView(row1);
-                setListAdapter(new ArrayAdapter<String>(this,android.R.layout.tableLayout, attraction));
+
             }
         }
 
