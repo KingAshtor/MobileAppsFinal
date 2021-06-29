@@ -10,4 +10,24 @@
     <string name="radioLarge">Large $2.25</string>
      <string name="txtSplash">Welcome to The Cafe</string>
     <string name="txtMainImg">Background of grey wood</string>
+
+    <string name="title_activity_breakfast">Breakfast</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="txtBreakfast">Breakfast</string>
+    <string name="txtselect">Select an item</string>
+    <string name="btnAdd">ADD TO ORDER</string>
+    <string name="btnback">GO BACK</string>
+    <string name="title_activity_lunch">Lunch</string>
+    <string name="txtLunch">Lunch</string>
+    <string name="txtDinner">Dinner</string>
+    <string name="txtDessert">Dessert</string>
+    <string name="title_activity_dinner">Dinner</string>
+    <string name="title_activity_dessert">Dessert</string>
 </resources>
