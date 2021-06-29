@@ -25,6 +25,7 @@ public class MyOrder extends AppCompatActivity {
     private RadioGroup radioGroup;
     private String currencyFormat;
     private double total;
+    private Object View;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,29 +33,28 @@ public class MyOrder extends AppCompatActivity {
         setContentView(R.layout.activity_my_order);
 
         //For displaying values to the tableLayout
-        TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
-        tableLayout.findViewsWithText(ArrayList<View>); //need to reference other activities
-
-
-        for(int i=0;i<totalNames.size();i++)
-        {
-            TableRow row=new TableRow(this);
-            double name = totalNames.get(i);
-            double price = totalPrice.get(i);
-            TextView food1=new TextView(this);
-            food1.setText(""+ );
-            TextView price1=new TextView(this);
-            price1.setText("$"+ );
-            row.addView(food1);
-            row.addView(price1);
-            tableLayout.addView(row);
-        }
+        //TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
+        //tableLayout.findViewsWithText(ArrayList<View>); //need to reference other activities
 
         //this is after the line initializing the stringArray, might have to be in the other activities instead
-        setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, attraction));
+        //setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, attraction));
 
         protected void onListItemCheck(TableLayout tableLayout, View v, int position, long id){
             //pull from the listArray in other projects to display here using for loop
+            for(int i=0;i<totalNames.size();i++)
+            {
+                TableRow row=new TableRow(this);
+                double name = totalNames.get(i);
+                double price = totalPrice.get(i);
+                TextView food1=new TextView(this);
+                food1.setText(findViewById(totalNames));
+                TextView price1=new TextView(this);
+                price1.setText(findViewById("$" + totalPrice);
+                row.addView(food1);
+                row.addView(price1);
+                tableLayout.addView(row);
+                setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, attraction));
+            }
         }
 
 
