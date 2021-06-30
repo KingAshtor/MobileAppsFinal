@@ -38,21 +38,20 @@ public class MyOrder extends AppCompatActivity {
         setContentView(layout.activity_my_order);
 
             TableLayout tableLayout = (TableLayout) findViewById(id.tableLayout);
-
-
 //
-//            ArrayList<String> BreakfastPicked = ArrayList<String>();
-//            ArrayAdapter<String> foodArrayAdapter = new ArrayAdapter<String>(this, R.layout.tableLayout, id.food1, BreakfastPicked);
-//
+            ArrayList<String> totalNames = new ArrayList<String>();
+            //help to display from arrayList
+            ArrayAdapter<String> nameArrayAdapter = new ArrayAdapter<String> (this, layout.activity_my_order, id.food1, totalNames);
+
 //            ArrayList<Double> BreakfastPrice = ArrayList<Double>();
 //            ArrayAdapter<Double> priceArrayAdapter = new ArrayAdapter<Double>(this, R.layout.tableLayout, id.price1, BreakfastPrice);
 
-        ArrayList<String> totalNames = (ArrayList<String>) getIntent().getSerializableExtra("totalnames");
+        //ArrayList<String> totalNames = (ArrayList<String>) getIntent().getSerializableExtra("totalnames");
 
 //
             for(int i=0;i<totalNames.size();i++)
             {
-                //getListAdapter(new ArrayAdapter<String>(MyOrder.this, totalNames, totalPrice));
+                //setListAdapter(new ArrayAdapter<String>(MyOrder.this, totalNames));
 
                 TableRow row1 =new TableRow(this);
                 //String name = totalNames(i);
@@ -78,10 +77,6 @@ public class MyOrder extends AppCompatActivity {
                 //Toast.makeText(activity_my_order.this, radioButton.getText(), Toast.LENGTH_SHORT).show();
             }
         });
-//
-//
-//
-//
 //        //for order total
 //        TextView txtMyOrderTotal = null;
 //
@@ -92,7 +87,6 @@ public class MyOrder extends AppCompatActivity {
 //                return formatter.format(Double.parseDouble(String.valueOf(total)));
 //            }
 //        }
-
 
         btnClearOrder = (Button)findViewById(id.btnClearOrder);
         btnClearOrder.setOnClickListener(new View.OnClickListener() {
@@ -116,7 +110,7 @@ public class MyOrder extends AppCompatActivity {
 
 
     public void btnGoBack() {
-        Intent intent = new Intent(this, Placeholder.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
@@ -124,11 +118,6 @@ public class MyOrder extends AppCompatActivity {
         Intent intent = new Intent(this, MyOrder.class);
                 finish();
             }
-
-
-
-
-
 
 //    public ArrayAdapter<String> getListAdapter() {
 //        totalNames.get(breakfastFood[getString()]);

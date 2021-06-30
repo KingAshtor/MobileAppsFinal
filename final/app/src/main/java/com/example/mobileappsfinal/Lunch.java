@@ -98,7 +98,7 @@ public class Lunch extends AppCompatActivity {
         });
     }
     public void goBack() {
-        Intent intent = new Intent(this, Placeholder.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
