@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TableLayout;
@@ -21,7 +22,7 @@ import java.util.ArrayList;
 public class MyOrder extends AppCompatActivity {
 
     private Button btnGoBack;
-    //private Button btnClearOrder;
+    private Button btnClearOrder;
     private RadioButton radioSmall;
     private RadioButton radioMedium;
     private RadioButton radioLarge;
@@ -49,6 +50,7 @@ public class MyOrder extends AppCompatActivity {
 //            ArrayList<Double> totalPrice = datasource.totalPrice;
 
             TableLayout tableLayout = (TableLayout) findViewById(id.tableLayout);
+            Intent intent = new Intent(this, Breakfast.class);
 
             ArrayList<String> totalNames = new ArrayList<String>();
             ArrayAdapter<String> foodArrayAdapter = new ArrayAdapter<String>(this, id.row1, id.food1, totalNames);
@@ -58,10 +60,12 @@ public class MyOrder extends AppCompatActivity {
             ArrayAdapter<Double> priceArrayAdapter = new ArrayAdapter<Double>(this, id.row1, id.price1, totalPrice);
             //tableLayout.setAdapter(priceArrayAdapter);
 
+            Bundle bundle = getIntent().getExtras();
+
             //pull from the listArray in other projects to display here using for loop
             //totalNames.get(totalNames.indexOf(totalNames));
             //totalPrice.get(totalPrice.indexOf(totalPrice));
-        
+
             for(int i=0;i<totalNames.size();i++)
             {
                 //getListAdapter(new ArrayAdapter<String>(MyOrder.this, totalNames, totalPrice));
@@ -106,6 +110,14 @@ public class MyOrder extends AppCompatActivity {
 //        }
 
 
+        btnClearOrder = (Button)findViewById(id.btnClearOrder);
+        btnClearOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(android.view.View view) {
+                btnClearOrder();
+            }
+        });
+
         btnGoBack = (Button)findViewById(id.btnGoBack);
         btnGoBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,10 +127,22 @@ public class MyOrder extends AppCompatActivity {
         });
 
         }
+
+
     public void btnGoBack() {
         Intent intent = new Intent(this, Placeholder.class);
         startActivity(intent);
     }
+
+    private void btnClearOrder() {
+        Intent intent = new Intent(this, MyOrder.class);
+                finish();
+            }
+
+
+
+
+
 
 //    public ArrayAdapter<String> getListAdapter() {
 //        totalNames.get(breakfastFood[getString()]);
