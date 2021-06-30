@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Miche/OneDrive/Documents/MobileAppsFinal/final/app/src/main/res/layout/activity_desserts.xml" value="0.15052083333333333" />
         <entry key="..\:/Users/Miche/OneDrive/Documents/MobileAppsFinal/final/app/src/main/res/layout/activity_dinner.xml" value="0.17708333333333334" />
-        <entry key="..\:/Users/Miche/OneDrive/Documents/MobileAppsFinal/final/app/src/main/res/layout/activity_my_order.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Miche/OneDrive/Documents/MobileAppsFinal/final/app/src/main/res/layout/activity_lunch.xml" value="0.1515625" />
+        <entry key="..\:/Users/Miche/OneDrive/Documents/MobileAppsFinal/final/app/src/main/res/layout/activity_main.xml" value="0.1515625" />
+        <entry key="..\:/Users/Miche/OneDrive/Documents/MobileAppsFinal/final/app/src/main/res/layout/activity_my_order.xml" value="0.2" />
         <entry key="..\:/Users/Miche/OneDrive/Documents/MobileAppsFinal/final/app/src/main/res/layout/row_item.xml" value="0.129981884057971" />
       </map>
     </option>

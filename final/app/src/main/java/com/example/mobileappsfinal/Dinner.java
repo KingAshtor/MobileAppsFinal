@@ -71,8 +71,8 @@ public class Dinner extends AppCompatActivity {
                         imgResult.setImageResource(dinnerNumber[+position]);
                         dinnerPicked.add(dinnerFood[+position]);
                         dinnerPrice.add(dinnerPrices[test]);
-                        totalNames.add(dinnerFood[+position]);
-                        totalPrice.add(dinnerPrices[test]);
+                        //totalNames.add(dinnerFood[+position]);
+                        //totalPrice.add(dinnerPrices[test]);
 
                     }
                 });

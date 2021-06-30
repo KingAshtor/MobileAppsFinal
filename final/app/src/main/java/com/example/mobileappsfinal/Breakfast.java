@@ -29,8 +29,8 @@ public class Breakfast extends AppCompatActivity {
     int test;
 
     //Michelle's ArrayLists
-//    ArrayList<String> totalNames = new ArrayList<String>();
-//    ArrayList<Double> totalPrice = new ArrayList<Double>();
+    ArrayList<String> totalNames = new ArrayList<String>();
+    ArrayList<Double> totalPrice = new ArrayList<Double>();
     //Michelle's ArrayLists
 
 
@@ -42,7 +42,7 @@ public class Breakfast extends AppCompatActivity {
         Button btnAdd = (Button) findViewById(R.id.btnAdd);
         MainAdapter adapter = new MainAdapter(com.example.mobileappsfinal.Breakfast.this,breakfastFood,breakfastNumber);
         grindView.setAdapter(adapter);
-
+        Intent intent = new Intent(this, MyOrder.class);
 
         grindView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -74,12 +74,17 @@ public class Breakfast extends AppCompatActivity {
 
                         totalNames.add(breakfastFood[+position]);
                         totalPrice.add(breakfastPrices[test]);
+//
+                        intent.putExtra(String.valueOf(totalNames), "totalnames");
+//                        String totalNames = bundle.getString(totalNames);
+//
+//                        intent.putExtra("priceArr", totalPrice);
+//                        String priceArr = bundle.getDouble("priceArr");
 
                     }
                 });
 
 //            TextView testView = (TextView) findViewById(R.id.txtTest);
-
 //            testView.setText(breakfastPicked.get(0) +" " + breakfastPrice.get(0));
 
 

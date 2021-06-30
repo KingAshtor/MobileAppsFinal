@@ -70,8 +70,8 @@ public class Desserts extends AppCompatActivity {
                         imgResult.setImageResource(dessertNumber[+position]);
                         dessertPicked.add(dessertFood[+position]);
                         dessertPrice.add(dessertPrices[test]);
-                        totalNames.add(dessertFood[+position]);
-                        totalPrice.add(dessertPrices[test]);
+                        //totalNames.add(dessertFood[+position]);
+                        //totalPrice.add(dessertPrices[test]);
 
                     }
                 });

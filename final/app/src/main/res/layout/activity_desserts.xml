@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtDinner"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Desserts">
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Breakfast">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MyPart.AppBarOverlay" />
+
+    <TextView
+        android:id="@+id/txtDessert"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:lineSpacingExtra="14sp"
+        android:text="@string/txtDessert"
+        android:textColor="#100C0C"
+        android:textSize="24sp" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="427dp"
+        android:layout_marginTop="10dp"
+
+        android:horizontalSpacing="4dp"
+        android:numColumns="2"
+        android:verticalSpacing="4dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAdd" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnback" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imgResult"
+        android:layout_width="match_parent"
+        android:layout_height="132dp" />
+
+</LinearLayout>
