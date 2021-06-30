@@ -29,7 +29,7 @@ public class Desserts extends AppCompatActivity {
 
     //Michelle's ArrayLists
     ArrayList<String> totalNames = new ArrayList<String>();
-    ArrayList<Double> totalPrice = new ArrayList<Double>();
+   // ArrayList<Double> totalPrice = new ArrayList<Double>();
     //Michelle's ArrayLists
 
     private AppBarConfiguration appBarConfiguration;
@@ -42,6 +42,10 @@ public class Desserts extends AppCompatActivity {
         Button btnAdd = (Button) findViewById(R.id.btnAdd);
         MainAdapter adapter = new MainAdapter(Desserts.this,dessertFood,dessertNumber);
         grindView.setAdapter(adapter);
+
+//        ArrayList<String> totalNames = (ArrayList<String>) getIntent().getSerializableExtra("totalnames");
+//        TextView testView = (TextView) findViewById(R.id.txtTest);
+//        testView.setText(totalNames.get(0) +" " + totalNames.get(0));
 
         grindView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -70,8 +74,10 @@ public class Desserts extends AppCompatActivity {
                         imgResult.setImageResource(dessertNumber[+position]);
                         dessertPicked.add(dessertFood[+position]);
                         dessertPrice.add(dessertPrices[test]);
-                        totalNames.add(dessertFood[+position]);
-                        totalPrice.add(dessertPrices[test]);
+                        //totalNames.add(dessertFood[+position]);
+                        //totalPrice.add(dessertPrices[test]);
+
+                        //toMyOrder();
 
                     }
                 });
@@ -80,6 +86,8 @@ public class Desserts extends AppCompatActivity {
 
 //            testView.setText(breakfastPicked.get(0) +" " + breakfastPrice.get(0));
 
+//                TextView testView = (TextView) findViewById(R.id.txtTest);
+//                testView.setText(totalNames.get(0) +" " + totalNames.get(0));
 
             }
         });
@@ -92,9 +100,19 @@ public class Desserts extends AppCompatActivity {
         });
     }
     public void goBack() {
-        Intent intent = new Intent(this, Placeholder.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+//    public void toMyOrder() {
+//        Intent intent = new Intent(this, MyOrder.class);
+//        startActivity(intent);
+//        Intent intArray = new Intent(this, MyOrder.class);
+//        intArray.putExtra(String.valueOf(totalNames), "totalnames");
+//        startActivity(intArray);
+//
+//    }
+
 
 
 }

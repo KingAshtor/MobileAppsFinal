@@ -97,6 +97,8 @@
             android:id="@+id/radioSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:autoText="false"
+            android:editable="false"
             android:text="@string/radioSmall"
             android:textColor="@color/purple_700"
             android:textStyle="bold"
@@ -138,7 +140,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/food1"
+                android:id="@+id/foodTitle"
                 android:layout_width="142dp"
                 android:gravity="left"
                 android:padding="6dp"
@@ -148,7 +150,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/price1"
+                android:id="@+id/priceTitle"
                 android:gravity="right"
                 android:padding="6dp"
                 android:text="$Price"
@@ -156,6 +158,25 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/food1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView1" />
+
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$" />
+        </TableRow>
+
 
     </TableLayout>
 

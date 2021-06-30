@@ -32,6 +32,8 @@ public class Breakfast extends AppCompatActivity {
     ArrayList<String> totalNames = new ArrayList<String>();
     ArrayList<Double> totalPrice = new ArrayList<Double>();
     //Michelle's ArrayLists
+//    Intent intent = new Intent(this, Desserts.class);
+//    intent.putExtra(totalNames), "totalnames");
 
 
     @Override
@@ -42,6 +44,7 @@ public class Breakfast extends AppCompatActivity {
         Button btnAdd = (Button) findViewById(R.id.btnAdd);
         MainAdapter adapter = new MainAdapter(com.example.mobileappsfinal.Breakfast.this,breakfastFood,breakfastNumber);
         grindView.setAdapter(adapter);
+//        Intent intent = new Intent(this, MyOrder.class);
 
         grindView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -70,14 +73,22 @@ public class Breakfast extends AppCompatActivity {
                         imgResult.setImageResource(breakfastNumber[+position]);
                         breakfastPicked.add(breakfastFood[+position]);
                         breakfastPrice.add(breakfastPrices[test]);
+
                         totalNames.add(breakfastFood[+position]);
                         totalPrice.add(breakfastPrices[test]);
+//
+//                        toMyOrder();
+
+//                        intent.putExtra(totalNames), "totalnames");
+//                        String totalNames = bundle.getString(totalNames);
+//
+//                        intent.putExtra("priceArr", totalPrice);
+//                        String priceArr = bundle.getDouble("priceArr");
 
                     }
                 });
 
 //            TextView testView = (TextView) findViewById(R.id.txtTest);
-
 //            testView.setText(breakfastPicked.get(0) +" " + breakfastPrice.get(0));
 
 
@@ -93,14 +104,25 @@ public class Breakfast extends AppCompatActivity {
         });
     }
     public void goBack() {
-        Intent intent = new Intent(this, Placeholder.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+    }
+
+//    public void toMyOrder() {
+//        Intent intArray = new Intent(this, Desserts.class);
+////        Intent intent = new Intent(this, MainActivity.class);
+//        intArray.putExtra(String.valueOf(totalNames), "totalnames");
+//
+//        startActivity(intArray);
+//        Intent intent = new Intent(this, MainActivity.class);
+        //startActivity(intent);
+//        Intent intArray = new Intent(this, Desserts.class);
+//        Intent intent = new Intent(this, MainActivity.class);
+        //intArray.putExtra(String.valueOf(totalNames), "totalnames");
+
+
     }
 
 
 
 
-
-
-
-}

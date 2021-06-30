@@ -29,8 +29,8 @@ public class Dinner extends AppCompatActivity {
 
 
     //Michelle's ArrayLists
-    ArrayList<String> totalNames = new ArrayList<String>();
-    ArrayList<Double> totalPrice = new ArrayList<Double>();
+    //ArrayList<String> totalNames = new ArrayList<String>();
+    //ArrayList<Double> totalPrice = new ArrayList<Double>();
     //Michelle's ArrayLists
 
 
@@ -71,8 +71,8 @@ public class Dinner extends AppCompatActivity {
                         imgResult.setImageResource(dinnerNumber[+position]);
                         dinnerPicked.add(dinnerFood[+position]);
                         dinnerPrice.add(dinnerPrices[test]);
-                        totalNames.add(dinnerFood[+position]);
-                        totalPrice.add(dinnerPrices[test]);
+                        //totalNames.add(dinnerFood[+position]);
+                        //totalPrice.add(dinnerPrices[test]);
 
                     }
                 });
@@ -95,7 +95,7 @@ public class Dinner extends AppCompatActivity {
     }
 
     public void goBack() {
-        Intent intent = new Intent(this, Placeholder.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
