@@ -1,5 +1,7 @@
 package com.example.mobileappsfinal;
 
+import static com.example.mobileappsfinal.R.*;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.Placeholder;
 
@@ -27,11 +29,12 @@ public class MyOrder extends AppCompatActivity {
     private String currencyFormat;
     private double total;
     private Object View;
+    private TableLayout tableLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_order);
+        setContentView(layout.activity_my_order);
 
 
         //For displaying values to the tableLayout
@@ -45,13 +48,15 @@ public class MyOrder extends AppCompatActivity {
 //            ArrayList<Double> totalNames = datasource.totalNames;
 //            ArrayList<Double> totalPrice = datasource.totalPrice;
 
-            TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
-            tableLayout.findViewsWithText(ArrayList<View>);
-
+            TableLayout tableLayout = (TableLayout) findViewById(id.tableLayout);
+            //tableLayout.findViewsWithText(ArrayList<View>);
             ArrayList<String> totalNames = new ArrayList<String>();
+            ArrayAdapter<String> foodArrayAdapter = new ArrayAdapter<String>(this, id.tableLayout, id.food1, totalNames);
+            //tableLayout.setAdapter(foodArrayAdapter);
+//            ArrayList<String> totalNames = new ArrayList<String>();
             ArrayList<Double> totalPrice = new ArrayList<Double>();
-
-            //getListAdapter(new ArrayAdapter<String>(MyOrder.this, totalNames, totalPrice));
+            ArrayAdapter<Double> priceArrayAdapter = new ArrayAdapter<Double>(this, id.tableLayout, id.price1, totalPrice);
+            //tableLayout.setAdapter(priceArrayAdapter0);
 
             //pull from the listArray in other projects to display here using for loop
             for(int i=0;i<totalNames.size();i++)
@@ -74,7 +79,7 @@ public class MyOrder extends AppCompatActivity {
             }
         //}
 
-        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        radioGroup = (RadioGroup) findViewById(id.radioGroup);
         radioGroup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,7 +103,7 @@ public class MyOrder extends AppCompatActivity {
 //        }
 
 
-        btnGoBack = (Button)findViewById(R.id.btnGoBack);
+        btnGoBack = (Button)findViewById(id.btnGoBack);
         btnGoBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

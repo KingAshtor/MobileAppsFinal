@@ -42,7 +42,7 @@ public class Breakfast extends AppCompatActivity {
         Button btnAdd = (Button) findViewById(R.id.btnAdd);
         MainAdapter adapter = new MainAdapter(com.example.mobileappsfinal.Breakfast.this,breakfastFood,breakfastNumber);
         grindView.setAdapter(adapter);
-
+        
 
         grindView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
