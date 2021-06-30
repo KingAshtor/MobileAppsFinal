@@ -43,6 +43,7 @@ public class Breakfast extends AppCompatActivity {
         MainAdapter adapter = new MainAdapter(com.example.mobileappsfinal.Breakfast.this,breakfastFood,breakfastNumber);
         grindView.setAdapter(adapter);
 
+
         grindView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -96,7 +97,6 @@ public class Breakfast extends AppCompatActivity {
         Intent intent = new Intent(this, Placeholder.class);
         startActivity(intent);
     }
-
 
 
 

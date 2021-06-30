@@ -33,6 +33,7 @@ public class MyOrder extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_order);
 
+
         //For displaying values to the tableLayout
         //TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
         //tableLayout.findViewsWithText(ArrayList<View>); //need to reference other activities
@@ -40,49 +41,38 @@ public class MyOrder extends AppCompatActivity {
         //this is after the line initializing the stringArray, might have to be in the other activities instead
         //setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, attraction));
 
-        protected void onListItemCheck(TableLayout tableLayout, View v, int position, long id){
+//        protected void onCreate(TableLayout tableLayout, View v, int position, long id){
 //            ArrayList<Double> totalNames = datasource.totalNames;
 //            ArrayList<Double> totalPrice = datasource.totalPrice;
 
             TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
+            tableLayout.findViewsWithText(ArrayList<View>);
+
+            ArrayList<String> totalNames = new ArrayList<String>();
+            ArrayList<Double> totalPrice = new ArrayList<Double>();
+
+            //getListAdapter(new ArrayAdapter<String>(MyOrder.this, totalNames, totalPrice));
 
             //pull from the listArray in other projects to display here using for loop
             for(int i=0;i<totalNames.size();i++)
             {
-                ArrayList<String> totalNames = new ArrayList<String>();
-                ArrayList<Double> totalPrice = new ArrayList<Double>();
-
-                setListAdapter(new ArrayAdapter<String>(this,android.R.layout.tableLayout, attraction));
+                //getListAdapter(new ArrayAdapter<String>(MyOrder.this, totalNames, totalPrice));
 
                 TableRow row1 =new TableRow(this);
-                double name = totalNames.get(i);
-
+                String name = totalNames.get(i);
                 double price = totalPrice.get(i);
+
                 TextView food1=new TextView(this);
-                food1.setText(findViewById(totalNames));
+                food1.setText(findViewById(totalNames.indexOf()));
                 TextView price1=new TextView(this);
-                price1.setText(findViewById("$" + totalPrice);
+                price1.setText(findViewById(Integer.parseInt("$" + totalPrice));
 
                 row1.addView(food1);
                 row1.addView(price1);
                 tableLayout.addView(row1);
 
             }
-        }
-
-
-
-
-
-
-//        btnGoBack = (Button) findViewById(R.id.btnGoBack);
-//        btnGoBack.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//                    public void onClick(View v){
-//                finish();
-//                //this is for the Go Back button, see word doc
-//            }
-//        });
+        //}
 
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         radioGroup.setOnClickListener(new View.OnClickListener() {
@@ -92,13 +82,6 @@ public class MyOrder extends AppCompatActivity {
                 //Toast.makeText(activity_my_order.this, radioButton.getText(), Toast.LENGTH_SHORT).show();
             }
         });
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -129,5 +112,10 @@ public class MyOrder extends AppCompatActivity {
         startActivity(intent);
     }
 
-  }
+//    public ArrayAdapter<String> getListAdapter() {
+//        totalNames.get(breakfastFood[getString()]);
+//        totalPrice.get(breakfastPrices[getString()]);
+//        return listAdapter;
+//    }
+}
 
