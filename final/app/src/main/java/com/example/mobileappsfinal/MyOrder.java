@@ -49,16 +49,19 @@ public class MyOrder extends AppCompatActivity {
 //            ArrayList<Double> totalPrice = datasource.totalPrice;
 
             TableLayout tableLayout = (TableLayout) findViewById(id.tableLayout);
-            //tableLayout.findViewsWithText(ArrayList<View>);
+
             ArrayList<String> totalNames = new ArrayList<String>();
-            ArrayAdapter<String> foodArrayAdapter = new ArrayAdapter<String>(this, id.tableLayout, id.food1, totalNames);
+            ArrayAdapter<String> foodArrayAdapter = new ArrayAdapter<String>(this, id.row1, id.food1, totalNames);
             //tableLayout.setAdapter(foodArrayAdapter);
-//            ArrayList<String> totalNames = new ArrayList<String>();
+
             ArrayList<Double> totalPrice = new ArrayList<Double>();
-            ArrayAdapter<Double> priceArrayAdapter = new ArrayAdapter<Double>(this, id.tableLayout, id.price1, totalPrice);
-            //tableLayout.setAdapter(priceArrayAdapter0);
+            ArrayAdapter<Double> priceArrayAdapter = new ArrayAdapter<Double>(this, id.row1, id.price1, totalPrice);
+            //tableLayout.setAdapter(priceArrayAdapter);
 
             //pull from the listArray in other projects to display here using for loop
+            //totalNames.get(totalNames.indexOf(totalNames));
+            //totalPrice.get(totalPrice.indexOf(totalPrice));
+        
             for(int i=0;i<totalNames.size();i++)
             {
                 //getListAdapter(new ArrayAdapter<String>(MyOrder.this, totalNames, totalPrice));
