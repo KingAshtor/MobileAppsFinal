@@ -28,8 +28,8 @@ public class Desserts extends AppCompatActivity {
     int test;
 
     //Michelle's ArrayLists
-    ArrayList<String> totalNames = new ArrayList<String>();
-    ArrayList<Double> totalPrice = new ArrayList<Double>();
+   // ArrayList<String> totalNames = new ArrayList<String>();
+   // ArrayList<Double> totalPrice = new ArrayList<Double>();
     //Michelle's ArrayLists
 
     private AppBarConfiguration appBarConfiguration;

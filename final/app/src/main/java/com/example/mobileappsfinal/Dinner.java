@@ -29,8 +29,8 @@ public class Dinner extends AppCompatActivity {
 
 
     //Michelle's ArrayLists
-    ArrayList<String> totalNames = new ArrayList<String>();
-    ArrayList<Double> totalPrice = new ArrayList<Double>();
+    //ArrayList<String> totalNames = new ArrayList<String>();
+    //ArrayList<Double> totalPrice = new ArrayList<Double>();
     //Michelle's ArrayLists
 
 
