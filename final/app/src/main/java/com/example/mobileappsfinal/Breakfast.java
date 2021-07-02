@@ -95,6 +95,12 @@ public class Breakfast extends AppCompatActivity {
             }
         });
 
+//        btnAdd = (Button)findViewById(R.id.btnAdd) {
+//            intent.putExtra(totalNames), "totalnames");
+//            String totalNames = bundle.getString(totalNames);
+//
+//        }
+
         Button btn = (Button)findViewById(R.id.btnBack);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
