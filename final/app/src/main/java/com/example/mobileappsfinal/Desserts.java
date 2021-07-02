@@ -44,6 +44,8 @@ public class Desserts extends AppCompatActivity {
         grindView.setAdapter(adapter);
 
 //        ArrayList<String> totalNames = (ArrayList<String>) getIntent().getSerializableExtra("totalnames");
+//
+//        trying to test the data transfer between activities
 //        TextView testView = (TextView) findViewById(R.id.txtTest);
 //        testView.setText(totalNames.get(0) +" " + totalNames.get(0));
 
@@ -53,7 +55,7 @@ public class Desserts extends AppCompatActivity {
                 TextView result = (TextView) findViewById(R.id.txtResult);
 //            Toast.makeText(getApplicationContext(), breakfastFood[+position] + " added to your order",Toast.LENGTH_SHORT).show();
 //            TextView result = (TextView) findViewById(R.id.txtResult);
-//    test = +position;
+//              test = +position;
 //            result.setText("You Chose " + breakfastFood[+position]);
 //            ImageView imgResult = (ImageView) findViewById(R.id.imgResult);
                 Toast.makeText(getApplicationContext(), dessertFood[+position] + " Selected", Toast.LENGTH_SHORT).show();
